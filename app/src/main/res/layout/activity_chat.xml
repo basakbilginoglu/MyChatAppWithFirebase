@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="firebaseexample.basak.example.com.firebaseexample.ChatActivity"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+    <ListView
+        android:id="@+id/listAllMessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.90"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.10">
+
+        <EditText
+            android:id="@+id/editMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.90"
+            android:ems="10"
+            android:hint="Mesaj Gönder"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:text="Gönder" />
+    </LinearLayout>
+
+</LinearLayout>
